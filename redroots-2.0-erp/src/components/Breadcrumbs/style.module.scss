@@ -1,0 +1,45 @@
+@import 'mixins.scss';
+
+.breadcrumbs {
+  padding: rem(12) rem(20) 0;
+  font-size: rem(20);
+}
+
+.backIcon {
+  padding-top: rem(12);
+  font-size: rem(20);
+  span {
+    font-size: rem(20);
+  }
+}
+
+.current {
+  color: $black;
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0 rem(10);
+  &:after {
+    display: inline-block;
+    content: '·';
+    color: $gray-5;
+  }
+}
+
+// dark theme
+[data-vb-theme='dark'] {
+  .breadcrumbs {
+    color: $dark-gray-1;
+  }
+
+  .current {
+    color: $white;
+  }
+
+  .arrow {
+    &:after {
+      color: $dark-gray-1;
+    }
+  }
+}

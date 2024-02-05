@@ -1,0 +1,17 @@
+.ant-tabs-nav {
+  width: 100% !important;
+  padding: 2px 30px !important;
+  // height: 50px;
+}
+.costing-tabs {
+  & .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+    height: 50px !important;
+  }
+  & .ant-tabs-nav .ant-tabs-tab-active {
+    font-weight: 800 !important;
+    font-size: large !important;
+  }
+}
+.costig_form .antd-table tr > th {
+  font-size: 14px !important;
+}

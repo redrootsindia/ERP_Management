@@ -1,0 +1,31 @@
+@import 'mixins.scss';
+
+.dropdown {
+  padding-top: 8px !important;
+  padding-right: 8px !important;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: #4b7cf3;
+
+    &::after,
+    .icon {
+      color: #4b7cf3;
+    }
+  }
+}
+
+.icon {
+  margin-right: rem(4);
+  position: relative;
+  bottom: -2px;
+  font-size: rem(28);
+  color: $gray-5;
+}
+
+.badge {
+  :global(.ant-badge-count) {
+    background: #4b7cf3;
+  }
+}

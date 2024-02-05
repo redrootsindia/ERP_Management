@@ -1,0 +1,37 @@
+.QCHead {
+  font-size: large;
+  font-weight: bold;
+}
+
+.leftQCBlock {
+  border-right: 0.1rem solid;
+  margin-right: 50px;
+  margin-bottom: 64px;
+
+  &-Details {
+    padding-bottom: 10px;
+  }
+
+  &-divider {
+    display: block;
+    clear: both;
+    width: 80%;
+    height: 1px;
+    margin: 16px 0;
+    position: relative;
+    top: -0.06em;
+    color: rgba(0, 0, 0, 0.65);
+    box-sizing: border-box;
+    background: #e8e8e8;
+  }
+}
+
+.QCBlock {
+  &-boldText {
+    font-weight: bold;
+  }
+
+  &-defectRow {
+    padding-top: 16px;
+  }
+}

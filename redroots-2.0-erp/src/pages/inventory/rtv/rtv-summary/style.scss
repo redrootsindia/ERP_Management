@@ -1,0 +1,13 @@
+.rtv_summary {
+  & .ant-table-tbody > tr > td {
+    padding: 2px 0px !important;
+    width: 120px !important;
+  }
+  & .ant-table-thead > tr > th {
+    padding: 8px 5px !important;
+    width: 120px !important;
+  }
+}
+// .rtv_summary .ant-table-thead > tr > th {
+//   padding: 8px 5px !important;
+// }

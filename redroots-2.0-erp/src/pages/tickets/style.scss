@@ -1,0 +1,31 @@
+.ant-tabs-nav {
+  width: 100% !important;
+}
+
+.ant-tabs-tab {
+  display: block; // centers text inside tabs
+  flex: 1;
+  text-align: center;
+}
+
+.ant-tabs-nav > div:nth-of-type(1) {
+  display: unset !important;
+  width: 100% !important;
+}
+
+.ticketTabs {
+  & .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+    height: 50px !important;
+  }
+
+  // & .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+  //   margin: 8px !important;
+  //   margin-right: 10px !important;
+  //   padding: 2px 16px !important;
+  // }
+
+  & .ant-tabs-nav .ant-tabs-tab-active {
+    font-weight: 800 !important;
+    font-size: large !important;
+  }
+}

@@ -1,0 +1,23 @@
+// Import mixins
+@import 'mixins.scss';
+
+.ant-table {
+  background: transparent !important;
+  &-thead > tr > th {
+    font-weight: 600 !important;
+    font-size: medium !important;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// DARK THEME STYLES
+[data-vb-theme='dark'] {
+  .ant-table-column-has-sorters {
+    &:hover {
+      background: $dark-gray-5 !important;
+    }
+  }
+  .ant-table-column-sort {
+    background: $dark-gray-5 !important;
+  }
+}

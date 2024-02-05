@@ -1,0 +1,26 @@
+.bigFont {
+  font-size: 14px;
+}
+
+.biggerFont {
+  font-size: large;
+}
+
+.padLeftAntRow {
+  padding-left: 20px;
+}
+
+.divPad {
+  padding-bottom: 32px;
+  padding-top: 8px;
+
+  & .removePad {
+    & .col-lg-3 {
+      padding-right: 0px !important;
+    }
+
+    & .col-lg-9 {
+      padding-left: 0px !important;
+    }
+  }
+}

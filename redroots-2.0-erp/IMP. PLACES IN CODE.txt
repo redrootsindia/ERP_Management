@@ -1,0 +1,11 @@
+1. Change initial state: src\redux\settings\reducers.js
+	- Set default as top-menu, default theme colour, default fonts, etc.
+
+2. Check default values available in Clean-UI for setting initial state (Point 1): src\@vb\components\Sidebar\index.js
+	- Values in this file are used to change something in initial state (Point 1 above).
+	- In this file, use the "key" in code that looks like this: changeSetting('version', value)
+	- For ex., to change default font, find "version" in initial state file of Point 1, and set it's value.
+
+3. Borrowing components in main-layout: src\layouts\Main\index.js
+	- Some components like MenuTop and Footer are not used directly from @vb folder
+	- Some components like Sidebar and SupportChat are removed
