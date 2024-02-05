@@ -250,7 +250,7 @@ const EmployeeForm = ({ user: { permissions, type, employee_id } }) => {
                   <div className="col-lg-6">
                     <div className="mb-2">Department</div>
                     {type === 'admin' && permissions.includes('updateEmployee') ? (
-                      <>
+                      <div>
                         <Select
                           mode="multiple"
                           showSearch
@@ -287,7 +287,7 @@ const EmployeeForm = ({ user: { permissions, type, employee_id } }) => {
                             ERP
                           </Select.Option>
                         </Select>
-                      </>
+                      </div>
                     ) : departments && departments.length ? (
                       departments.map((department) => <Tag>{department}</Tag>)
                     ) : null}
@@ -351,7 +351,7 @@ const EmployeeForm = ({ user: { permissions, type, employee_id } }) => {
                 />
                 <div className="custom-error-text mb-4">{passwordError || ''}</div>
                 {type === 'admin' && permissions.includes('updateEmployee') && (
-                  <>
+                  <div>
                     <div className="mb-2">
                       Role<span className="custom-error-text"> *</span>
                     </div>
@@ -378,7 +378,7 @@ const EmployeeForm = ({ user: { permissions, type, employee_id } }) => {
                         : null}
                     </Select>
                     <div className="custom-error-text mb-4">{roleIDError || ''}</div>
-                  </>
+                  </div>
                 )}
               </div>
             </div>
