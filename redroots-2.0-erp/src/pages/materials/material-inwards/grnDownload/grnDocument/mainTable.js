@@ -116,10 +116,10 @@ const MainTable = ({ data }) => {
 
             <View style={styles.column}>
               <Text style={{ ...styles.restCells, width: 300, height: 17, padding: 2 }}>
-                {item.material_name}
+                {item.material_code}
               </Text>
               <Text style={{ ...styles.restCells, width: 300, height: 17, padding: 2 }}>
-                {item.material_code}
+                {item.material_name}
               </Text>
             </View>
 
