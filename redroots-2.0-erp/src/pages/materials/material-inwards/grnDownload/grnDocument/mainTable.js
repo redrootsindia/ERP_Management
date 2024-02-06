@@ -27,23 +27,23 @@ const MainTable = ({ data }) => {
         </View>
 
         <View style={styles.restColHeaders}>
-          <Text style={{ ...styles.cellInHeader, width: 200 }}>Description</Text>
+          <Text style={{ ...styles.cellInHeader, width: 300 }}>Description</Text>
         </View>
 
         <View style={styles.restColHeaders}>
-          <Text style={{ ...styles.cellInHeader, width: 130 }}>PO Qty.</Text>
+          <Text style={{ ...styles.cellInHeader, width: 100 }}>PO Qty.</Text>
         </View>
 
         <View style={styles.restColHeaders}>
-          <Text style={{ ...styles.cellInHeader, width: 130 }}>Recieved Qty.</Text>
+          <Text style={{ ...styles.cellInHeader, width: 100 }}>Recieved Qty.</Text>
         </View>
 
         <View style={styles.restColHeaders}>
-          <Text style={{ ...styles.cellInHeader, width: 130 }}>Rate/Pc</Text>
+          <Text style={{ ...styles.cellInHeader, width: 100 }}>Rate/Pc</Text>
         </View>
 
         <View style={styles.restColHeaders}>
-          <Text style={{ ...styles.cellInHeader, width: 130 }}>Total</Text>
+          <Text style={{ ...styles.cellInHeader, width: 120 }}>Total</Text>
         </View>
       </View>
     )
@@ -115,34 +115,34 @@ const MainTable = ({ data }) => {
             </View>
 
             <View style={styles.column}>
-              <Text style={{ ...styles.restCells, width: 200, height: 17, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 300, height: 17, padding: 2 }}>
                 {item.material_name}
               </Text>
-              <Text style={{ ...styles.restCells, width: 200, height: 17, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 300, height: 17, padding: 2 }}>
                 {item.material_code}
               </Text>
             </View>
 
             <View style={styles.column}>
-              <Text style={{ ...styles.restCells, width: 130, height: 25, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 100, height: 25, padding: 2 }}>
                 {item.po_quantity}
               </Text>
             </View>
 
             <View style={styles.column}>
-              <Text style={{ ...styles.restCells, width: 130, height: 25, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 100, height: 25, padding: 2 }}>
                 {item.quantity}
               </Text>
             </View>
 
             <View style={styles.column}>
-              <Text style={{ ...styles.restCells, width: 130, height: 25, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 100, height: 25, padding: 2 }}>
                 {item.unit_cost}
               </Text>
             </View>
 
             <View style={styles.column}>
-              <Text style={{ ...styles.restCells, width: 130, height: 25, padding: 2 }}>
+              <Text style={{ ...styles.restCells, width: 120, height: 25, padding: 2 }}>
                 {(item.unit_cost * item.quantity).toFixed(2)}
               </Text>
             </View>
