@@ -53,7 +53,12 @@ const RTVs = ({ user: { permissions } }) => {
 
   const tableColumns = [
     {
-      title: 'RTV Name / ID',
+      title: 'ID',
+      dataIndex: 'id',
+      key: 'id',
+    },
+    {
+      title: 'RTV Name',
       dataIndex: 'rtv_name',
       key: 'rtv_name',
     },
