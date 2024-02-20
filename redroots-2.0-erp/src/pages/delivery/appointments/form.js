@@ -394,7 +394,12 @@ const AppointmentForm = ({ user: { permissions, type } }) => {
       const total_quantity = dispatched_quantity ? quantity - dispatched_quantity : quantity
       console.log('total_quantity', total_quantity)
       console.log('productCount', productCount)
-      if (Number(total_quantity) > Number(productCount)) isPartial = true
+      // if (Number(total_quantity) > Number(productCount)) isPartial = true;
+      if (
+        Number(total_quantity) > Number(productCount) ||
+        Number(total_quantity) === Number(productCount)
+      )
+        isPartial = true
       if (Number(productCount) > Number(total_quantity)) isExcess = true
     })
 
@@ -452,7 +457,7 @@ const AppointmentForm = ({ user: { permissions, type } }) => {
         centered: true,
         title: 'Partial Items Packed',
         content:
-          'Some of the items packed are in less quantity than what was picked. Do you wish to continue?',
+          'Some of the items packed have a quantity equal to or less than what was picked. Do you wish to continue?',
         onOk: () => finalSubmission(mutationVariables),
         onCancel: () => {},
       })
