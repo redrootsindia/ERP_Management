@@ -284,7 +284,7 @@ const PutAwaysTab = ({ user: { permissions }, statusType, search }) => {
   if (error) return `Error occured while fetching data: ${error.message}`
 
   return (
-    <>
+    <div>
       {search && (
         <div className="col-lg-3 mb-2 ml-auto">
           <Input
@@ -338,7 +338,7 @@ const PutAwaysTab = ({ user: { permissions }, statusType, search }) => {
           </div>
         </Spin>
       </div>
-    </>
+    </div>
   )
 }
 
