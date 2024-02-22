@@ -195,12 +195,12 @@ const PutAwaysTab = ({ user: { permissions }, statusType, search }) => {
               {in_progress ? (
                 <Popconfirm
                   title={
-                    <>
+                    <div>
                       This put-away is in &quot;Processing&quot; state. Someone may be scanning the
                       items in this put-away right now.
                       <br />
                       Are you sure to unblock this put-away?
-                    </>
+                    </div>
                   }
                   okText="Yes"
                   cancelText="No"
