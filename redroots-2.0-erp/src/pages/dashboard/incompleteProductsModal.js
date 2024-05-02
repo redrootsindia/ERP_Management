@@ -84,7 +84,7 @@ const IncompleteProductsModal = () => {
 
   return (
     <div>
-      <div className="col-lg-3 col-md-12">
+      <div className="col-md-12">
         <div className="card">
           <Spin spinning={productsLoad} tip="Loading...">
             <div

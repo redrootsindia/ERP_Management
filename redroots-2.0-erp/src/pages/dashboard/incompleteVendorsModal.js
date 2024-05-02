@@ -83,7 +83,7 @@ const IncompleteVendorsModal = () => {
 
   return (
     <div>
-      <div className="col-lg-3 col-md-12">
+      <div className="col-md-12">
         <div className="card">
           <Spin spinning={vendorsLoad} tip="Loading...">
             <div
